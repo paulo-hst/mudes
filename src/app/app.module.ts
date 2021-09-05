@@ -5,12 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http'
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { TopMenuComponent } from './top-menu/top-menu.component';
+import { DetalheNoticiaComponent } from './detalhe-noticia/detalhe-noticia.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopMenuComponent
+    DetalheNoticiaComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,4 @@
 nav{
-    background: red !important;
 }
 
 nav img{
@@ -8,4 +7,6 @@ nav img{
 
 nav p{
     font-size: 1.2rem;
+    font-weight: 500;
+    margin: 1rem;
 }
