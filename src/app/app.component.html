@@ -25,15 +25,16 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-4 cards" style="width: 5rem;" *ngFor='let noticia of noticias'>
-          <img src={{noticia.img_url}} class="card-img-top" alt="...">
+          <img src={{noticia.img_url}} class="card-img-top" alt={{noticia.resumo}}>
           <div class="card-body">
             <h5 class="card-title">{{noticia.titulo}}</h5>
             <p class="card-text">{{noticia.resumo}}</p>
-            <a href="#" class="btn btn-primary">Ler mais</a>
+            <a href="/?id={{noticia.cod_noticia}}" class="btn btn-primary">Ler mais</a>
           </div>
         </div>
       </div>
     </div>
   </section>
+
 </body>
 </html>
