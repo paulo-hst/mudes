@@ -4,8 +4,87 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mudes!</title>
+  <title>Mudes</title>
 </head>
 <body>
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <picture>
+          <img src="assets/img/logo.png" class="logo float-start">
+        </picture>
+      </a>   
+      <p>Fundação Movimento Universitário de Desenvolvimento Econômico e Social</p>   
+    </div>
+  </nav>
+
+  <div class="container">
+    <button class="btn btn-danger" (click)="obterTodas()">Totas as noticias</button>
+    <button class="btn btn-primary" (click)="obterNoticiaPorId()">Noticia por ID</button>
+  </div>
+
+
+  <div>
+    <ul>
+      <p>teste</p>
+      <li *ngFor='let noticia of noticias'>
+        {{noticia.titulo}} - {{noticia.texto}}
+      </li>
+    </ul>
+  </div>
+
+  <section class="container" >
+    <h2>Notícias</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+
+
+          <div class="card" style="width: 18rem;" *ngFor='let noticia of noticias'>
+            <img src="https://via.placeholder.com/100" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{noticia.titulo}}</h5>
+              <p class="card-text">{{noticia.texto}}</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+
+        </div>
+    
+        
+      </div>
+    </div>
+    
+
+  </section>
+
+
+  <section class="container" >
+    <h2>Notícias</h2>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="card" style="width: 18rem;">
+            <img src="https://via.placeholder.com/100" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+
+  </section>
+
+
 </body>
 </html>
