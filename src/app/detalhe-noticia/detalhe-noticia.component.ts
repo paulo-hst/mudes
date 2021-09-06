@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router'
 
 @Component({
   selector: 'app-detalhe-noticia',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetalheNoticiaComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { 
+    this.route.params.subscribe(params => console.log(params))
+  }
 
   ngOnInit(): void {
   }

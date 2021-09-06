@@ -29,12 +29,14 @@
           <div class="card-body">
             <h5 class="card-title">{{noticia.titulo}}</h5>
             <p class="card-text">{{noticia.resumo}}</p>
-            <a href="/?id={{noticia.cod_noticia}}" class="btn btn-primary">Ler mais</a>
+            <a routerLink="/detalhe-noticia/{{noticia.cod_noticia}}" routerLinkActive="activebutton" class="btn btn-primary">Ler mais</a>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <app-detalhe-noticia></app-detalhe-noticia>
+  <router-outlet></router-outlet>
 
 </body>
 </html>
