@@ -19,7 +19,11 @@
         <div class="card-body">
             <h5 class="card-title">{{noticia.titulo}}</h5>
             <p class="card-text">{{noticia.resumo}}</p>
-            <a routerLink="/detalhe-noticia/{{noticia.cod_noticia}}" class="btn btn-primary">Ler mais</a>
+            <a 
+                routerLink="/detalhe-noticia/{{noticia.titulo}}" 
+                class="btn btn-primary">
+                Ler mais
+            </a>
         </div>
         </div>
     </div>

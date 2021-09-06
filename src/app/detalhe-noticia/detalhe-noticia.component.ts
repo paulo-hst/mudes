@@ -8,8 +8,13 @@ import { ActivatedRoute } from '@angular/router'
 })
 export class DetalheNoticiaComponent implements OnInit {
 
+  texto: Object
+
   constructor(private route: ActivatedRoute) { 
-    this.route.params.subscribe(params => console.log(params))
+    this.route.params.subscribe(params => {
+      console.log(params)
+      this.texto = params.id
+    })
   }
 
   ngOnInit(): void {
