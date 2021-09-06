@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http'
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DetalheNoticiaComponent } from './detalhe-noticia/detalhe-noticia.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DetalheNoticiaComponent
+    DetalheNoticiaComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
